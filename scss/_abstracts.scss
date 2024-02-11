@@ -1,0 +1,50 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@500&display=swap');
+
+
+/* Variables */
+$primary-font: 'Changa', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+$fav-font: 'K2D', sans-serif;
+
+$primary-color: #E01C55;
+$secondary-color: #171C1F;
+$info-color: #FFC64A;
+$comment-color: #1F88FF;
+$gray-color: #42525A;
+$light-color: #FEFEFE;
+$safe-color: #EDEFF1;
+
+
+/* UTİLİTİES */
+.bg {
+
+    /* background color */
+    &-dark {
+        background-color: $secondary-color;
+    }
+
+    &-light {
+        background-color: $light-color;
+    }
+
+    &-safe {
+        background-color: $safe-color;
+    }
+}
+
+.ml {
+
+    /* margin left */
+    &-2 {
+        margin-left: 2rem;
+    }
+}
+
+/* MİXİNS */
+@mixin flex-display($display, $align-items, $justify-content) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
